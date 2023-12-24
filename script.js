@@ -6,13 +6,20 @@ let img = document.querySelector('#imgEstr');
 
 const dolar = 4.86
 const euro = 5.36
+const bitcoin = 0.0000047
+const pip = 1.61121
 
 const convertValue = () => {
     const valorInput = document.querySelector('#valor').value;
     const currencyValorReal = document.querySelector('#currencyValorReal')
     const currencyValorDolar = document.querySelector('#currencyValorDolar')
+
     let converterDolar = valorInput / dolar // divisao para converter
     let converterEuro = valorInput / euro
+
+    let converterBitcoin = valorInput * bitcoin
+
+    let converterPip = valorInput * pip
 
 
     // Formatando numero em forma de dinheirio (reais)
@@ -41,6 +48,12 @@ const convertValue = () => {
         const valorFormatadoEuro = formatoEuro.format(converterEuro)
         currencyValorDolar.innerHTML = valorFormatadoEuro
     }
+    if (select.value === 'bitcoin') {
+        currencyValorDolar.innerHTML = converterBitcoin
+    }
+    if (select.value === 'pip') {
+        currencyValorDolar.innerHTML = converterPip
+    }
 }
 
 changeSelect = () => {
@@ -54,6 +67,14 @@ changeSelect = () => {
     if (select.value === "dolar") {
         name.innerHTML = 'Dólar'
         imgExt.src = './img/EUA.png'
+    }
+    if (select.value === "bitcoin") {
+        name.innerHTML = 'Bitcoins'
+        imgExt.src = './img/bitcoin.png'
+    }
+    if (select.value === "pip") {
+        name.innerHTML = 'PIP/Forex'
+        imgExt.src = './img/forex.png'
     }
     convertValue() // chamando a outra função junto com o change
 
