@@ -1,0 +1,117 @@
+/* Importação de Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset de Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+/* Estilos do Corpo */
+body {
+    background-color: #E5E5E5;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    height: 66px;
+    background-color: #1883E2;
+    border-radius: 65px 0;
+}
+
+header>h1 {
+    color: #f4f4f4;
+    font-weight: normal;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Estilos do Contêiner Principal */
+.container {
+    width: 375px;
+    height: 710px;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137);
+}
+
+/* Estilos do Conteúdo Principal */
+main {
+    padding: 24px;
+}
+
+/* Estilos de Rótulos e Seletores */
+label {
+    font-size: 1rem;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos dos Seletores */
+select,
+input {
+    background-color: #ffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    height: 48px;
+    margin-top: 6px;
+    margin-bottom: 24px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    padding-left: 16px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.137);
+}
+
+/* Estilos do Botão */
+button {
+    background-color: #1883E2;
+    color: #f4f4f4;
+    border-radius: 25px;
+    border: none;
+    height: 48px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .6;
+}
+
+/* Estilos da Seção de Conversão */
+section {
+    border: 1px solid #1883E2;
+    border-radius: 6px;
+}
+
+.section-container {
+    text-align: center;
+    padding: 5px;
+}
+
+.name-currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency-value {
+    color: #1883E2;
+    font-size: 20px;
+    font-weight: bold;
+}

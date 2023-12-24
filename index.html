@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <div class="container" onselect="s" >
+        <header>
+            <h1>Conversor de Moedas</h1>
+        </header>
+
+        <main>
+            <label>Converter de:</label>
+            <select name="" id="">
+                <option value="">R$ Real</option>
+            </select>
+
+            <label>Converter para:</label>
+            <select name="" id="select">
+                <option value="dolar" id="dolarSelect">US$ Dólar</option>
+                <option value="euro" id="euroSelect">€ Euro</option>
+            </select>
+
+            <p>Valor:</p>
+            <input placeholder="R$2.000,00" id="valor">
+            <button type="button" id="btn">Converter</button>
+
+            <section class="section-container">
+                <div>
+                    <img src="img/Brasil.png" alt="Brasil">
+                    <p class="name-currency">Real</p>
+                    <p class="currency-value" id="currencyValorReal">R$2.000,00</p>
+                </div>
+                <img src="img/icons8-flecha-grossa-apontando-para-baixo-32.png" alt="seta">
+                <div class="section-container">
+                    <img src="img/EUA.png" alt="EUA" id="imgExt">
+                    <p class="name-currency" id="name">Dólar</p>
+                    <p class="currency-value" id="currencyValorDolar">US$2.000,00</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
